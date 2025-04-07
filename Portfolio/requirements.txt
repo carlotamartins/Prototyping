@@ -5,3 +5,4 @@ reportlab
 cohere
 speechrecognition
 plotly
+streamlit-option-menu
