@@ -6,3 +6,4 @@ cohere
 speechrecognition
 plotly
 streamlit-option-menu
+scikit-learn
