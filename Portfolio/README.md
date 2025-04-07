@@ -39,8 +39,9 @@ source venv/bin/activate  # or .\\venv\\Scripts\\activate on Windows
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Add your Cohere key (replace this line in the script with os.getenv if needed)
-echo "your-cohere-key" > cohere.key
+# 3. Create a secrets file for your Cohere API key. Create a file at .streamlit/secrets.toml with the following content:
+[cohere]
+api_key = "your-real-cohere-api-key"
 
 # 4. Run the app
 streamlit run diabetes_st_final.py
