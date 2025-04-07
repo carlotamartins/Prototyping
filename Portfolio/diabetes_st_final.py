@@ -52,9 +52,9 @@ set_background('background.png')
 
 
 def load_data():
-    df = pd.read_csv('database.csv')
-    df = df[['gender', 'age', 'time_in_hospital', 'num_lab_procedures', 'insulin', 'diabetesMed', 'readmitted']]
-    return df
+    file_path = os.path.join(os.path.dirname(__file__), "database.csv")
+    df = pd.read_csv(file_path)
+    return df[['gender', 'age', 'time_in_hospital', 'num_lab_procedures', 'insulin', 'diabetesMed', 'readmitted']]
 
 def display_sidebar():
     st.sidebar.title("Medical Prediction App")
