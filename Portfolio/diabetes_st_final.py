@@ -16,14 +16,15 @@ from streamlit_option_menu import option_menu
 model = joblib.load(os.path.join(os.path.dirname(os.path.abspath(__file__)), "ml_model.pkl"))
 
 def apply_custom_style():
-    with open("style.css") as f:
+    css_path = os.path.join(os.path.dirname(__file__), "style.css")
+    with open(css_path) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-    st.markdown("""
-    <div style='text-align: center; padding: 1rem; background-color: #dbeeff; border-radius: 10px;'>
-        <h1 style='margin-bottom: 0.2rem;'>Medical Prediction & Assistant Tool</h1>
-        <p style='color: #555;'>Powered by AI • Designed for Healthcare Professionals</p>
-    </div>
-    """, unsafe_allow_html=True)
+        st.markdown("""
+        <div style='text-align: center; padding: 1rem; background-color: #dbeeff; border-radius: 10px;'>
+            <h1 style='margin-bottom: 0.2rem;'>Medical Prediction & Assistant Tool</h1>
+            <p style='color: #555;'>Powered by AI • Designed for Healthcare Professionals</p>
+        </div>
+        """, unsafe_allow_html=True)
 
 apply_custom_style()
 
