@@ -30,9 +30,11 @@ apply_custom_style()
 
 
 def get_base64(bin_file):
-    with open(bin_file, 'rb') as f:
+    abs_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), bin_file)
+    with open(abs_path, 'rb') as f:
         data = f.read()
     return base64.b64encode(data).decode()
+
 
 def set_background(png_file):
     bin_str = get_base64(png_file)
