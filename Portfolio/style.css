@@ -1,0 +1,92 @@
+body {
+    background-color: #fefcf7; /* soft beige */
+    font-family: 'Segoe UI', sans-serif;
+    color: #333333;
+    }
+    
+    h1, h2, h3 {
+    color: #1c4e80; /* soft blue */
+    }
+    
+    /* Header section */
+    header {
+    background-color: #e3f2fd;
+    padding: 1.5em;
+    text-align: center;
+    border-bottom: 2px solid #bbdefb;
+    margin-bottom: 2em;
+    }
+    
+    /* Sidebar */
+    [data-testid="stSidebar"] {
+    background-color: #e3f2fd; /* Match header color */
+    padding: 2em;
+    color: #1a237e;
+    font-size: 0.95rem;
+    border-right: 1px solid #bbdefb;
+    width: 280px;
+    }
+    
+    /* Buttons */
+    .stButton>button {
+    background-color: #64b5f6;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0.5em 1.2em;
+    border: none;
+    }
+    
+    .stDownloadButton>button {
+    background-color: #42a5f5;
+    color: white;
+    border-radius: 6px;
+    padding: 0.4em 1.2em;
+    border: none;
+    }
+    
+    /* Inputs */
+    .stTextInput>div>div>input,
+    .stSelectbox>div>div {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 0.5em;
+    border: 1px solid #90caf9;
+    width: 100%;
+    }
+    
+    /* Horizontal lines */
+    hr {
+    border: none;
+    height: 1px;
+    background: #ccc;
+    margin: 2em 0;
+    }
+    
+    /* Make markdown text and info boxes cleaner */
+    .block-container {
+    padding-top: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    }
+    
+    /* Improve spacing and layout */
+    section.main > div {
+    padding: 1.5rem 3rem;
+    }
+    
+    /* Reduce plot sizes */
+    .css-1kyxreq.e1tzin5v2 > div > div > div > div,
+    .css-ocqkz7.e1tzin5v2 > div > div > div > div {
+    max-width: 700px;
+    margin: auto;
+    }
+    
+    /* Control figure size */
+    figure {
+    max-width: 700px !important;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    
